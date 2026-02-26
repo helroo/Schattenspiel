@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Animation Schattenspiel">
+	<meta name="description" content="Dies ist eine weitergehende Beschreibung zu meiner Website">
+	<title>Helena Romer - Animation</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Biryani:wght@200;300;400;600;700;800;900&family=Nova+Slim&display=swap"
+		rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/lottie.min.js" defer></script>
+	<script src="assets/js/dm.js" defer></script>
+	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<!-- header navigation -->
+<body class="container">
+	<header class="main-header inline-padding">
+		<div class="logo-container">
+			<img class="logo" src="assets/img/logo.svg" alt="Website Logo" width="80.00" height="63.40">
+		</div>
+		<nav>
+			<button class="toggle-button" aria-label="Hauptmenü" id="hauptnavigation">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="100%">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>		  
+			</button>
+				
+			<ul class="menu-mobile">
+				<li><h2><a href="#homepage">Homepage</a></h2></li>
+				<li><h2><a href="#project">Project</a></h2></li>
+				<li><h2><a href="#modelViewer">World</a></h2></li>
+				<li><h2><a href="#documentation">Documentation</a></h2></li>
+				<li><h2><a href="#animation">Animation</a></h2></li>
+			</ul>
+
+			<ul class="menu-desktop">
+				<li class="hideOnMobile"><h2><a href="#homepage">Homepage</a></h2></li>
+				<li class="hideOnMobile"><h2><a href="#project">Project</a></h2></li>
+				<li class="hideOnMobile"><h2><a href="#modelViewer">World</a></h2></li>
+				<li class="hideOnMobile"><h2><a href="#documentation">Documentation</a></h2></li>
+				<li class="hideOnMobile"><h2><a href="#animation">Animation</a></h2></li>
+			</ul>
+		</nav>
+
+		<!-- header light/dark button -->
+		<div class="toggle-btn-container">
+			<button class="btn toggle-btn" id="theme-toggle" title="Theme toggle button">
+				<svg class="icon icon-sun" id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+					viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+				</svg>
+				<svg class="icon icon-moon" id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+					viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+				</svg>
+			</button>
+		</div>
+
+		<!-- click sound -->
+		<audio id="clickSound">
+            <source src="assets/audio/click.mp3" type="audio/mpeg">
+        </audio>
+
+	<!-- ? -->
+    </header>
+	</header>
+	<!-- header model-viewer -->
+	<section class="model-container">
+		<div class="model-title-container">
+			<h1 class="model-title">Animation</h1>
+			<h1 class="model-subtitle">Schattenspiel</h1>
+		</div>
+		<model-viewer id="homepage" class="model-viewer" src="assets/3d/cloud.glb" scale="100 100 100"
+			alt="3D-Modell von einer Wolke" enviroment-image="none" shadow-intensity="1" shadow-softness="0.5"
+			exposure="1.5" camera-controls camera-orbit="0deg 75de 50m" field-of-view="45deg" auto-rotate
+			interaction-prompt="none">
+		</model-viewer>
+	</section>
+
+	<main>
+		<!-- project: introduction -->
+		<section id="project" class="block-padding inline-padding">
+			<h2>Project</h2>
+				<div class="introduction-text">
+					<p>Hello everyone! We are a small <strong>team of three</strong> creative minds, and we’d like to introduce you to our <strong>animation project, "Schattenspiel"</strong>.</p>
+					<p>The idea was born during our second semester and was brought to life over several months in the third and fourth semesters.
+					   Schattenspiel is a <strong>"low-poly" 3D animation</strong> that explores the <strong>of light and shadow</strong> – and challenges how easily our perception can be tricked.
+					   The inspiration for this project came from our team leader, <strong>Alexander Naumann</strong>, who was fascinated by a scene in <strong>"The Wizard of Oz"</strong>:
+					   "A fearsome wizard, appearing powerful and grand—until a simple curtain is pulled aside, revealing revealing only a frail man behind the illusion."
+					   In our story, the main roles are taken by <strong>Caspar</strong>, a brave young boy, and <strong>Wolf</strong>, a little mouse.
+					   Together, they dive into an adventure where appearances are not what they seem.</p>
+					<p>Are you ready to uncover the truth? Step into the world of Schattenspiel and see for yourself!</p>
+				</div>
+
+		</section>
+
+		<!-- 3d world -->
+		<section class="model-container2">
+			<div class="model-title-container2">
+				<h1>The 3D World</h1>
+			</div>
+			<model-viewer 
+				id="modelViewer" 
+				class="model-viewer" 
+				src="assets/3d/grywald_website_final.glb" 
+				environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+				auto-rotate 
+				shadow-intensity="1" 
+				scale="1 1 1" 
+				camera-orbit="0deg 65deg 800px" 
+				camera-controls
+				field-of-view="45deg"
+				interaction-prompt="none">
+			</model-viewer>
+
+			<button id="enterButton" class="btn2 btn2-outline-blue">Betreten</button>
+
+			<div id="extraButtons" class="hidden">
+				<button class="btn-left">Story</button>
+				<button class="btn-center">Charakter</button>
+				<button class="btn-right">Crew</button>
+			</div>
+
+		</section>
+
+		<audio id="backgroundSound" loop>
+			<source src="assets/audio/world_music_neu.mp3" type="audio/mpeg">
+		</audio>
+	
+		<section id="dynamicContent" class="hidden">
+		</section>
+
+		<!-- image-sliders -->
+		<section id="documentation" class="block-padding inline-padding">
+			<h2>Documentation</h2>
+		
+			<!-- first slider -->
+			<div class="container">
+				<div class="slideshow-container slideshow-container-1">
+					<div class="mySlides slide1">
+						<div class="numbertext">1 / 5</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/grywald_01/grywald_01_1200_800.webp 1200w,
+								assets/img/web_images/grywald_01/grywald_01_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/grywald_01/grywald_01_400_400.webp"
+							srcset="assets/img/web_images/grywald_01/grywald_01_400_400.webp 400w,
+									assets/img/web_images/grywald_01/grywald_01_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text">Village entrance</div>
+					</div>
+
+					<div class="mySlides slide1">
+						<div class="numbertext">2 / 5</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/grywald_02/grywald_02_1200_800.webp 1200w,
+								assets/img/web_images/grywald_02/grywald_02_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/grywald_02/grywald_02_400_400.webp"
+							srcset="assets/img/web_images/grywald_02/grywald_02_400_400.webp 400w,
+									assets/img/web_images/grywald_02/grywald_02_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text">Village overview </div>
+					</div>
+
+					<div class="mySlides slide1">
+						<div class="numbertext">3 / 5</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/grywald_03/grywald_03_1200_800.webp 1200w,
+								assets/img/web_images/grywald_03/grywald_03_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/grywald_03/grywald_03_400_400.webp"
+							srcset="assets/img/web_images/grywald_03/grywald_03_400_400.webp 400w,
+									assets/img/web_images/grywald_03/grywald_03_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Center of the village </div>
+					</div>
+
+					<div class="mySlides slide1">
+						<div class="numbertext">4 / 5</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/grywald_04/grywald_04_1200_800.webp 1200w,
+						assets/img/web_images/grywald_04/grywald_04_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/grywald_04/grywald_04_400_400.webp"
+							srcset="assets/img/web_images/grywald_04/grywald_04_400_400.webp 400w,
+									assets/img/web_images/grywald_04/grywald_04_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Village well </div>
+					</div>
+
+					<div class="mySlides slide1">
+						<div class="numbertext">5 / 5</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/grywald_05/grywald_05_1200_800.webp 1200w,
+								assets/img/web_images/grywald_05/grywald_05_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/grywald_05/grywald_05_400_400.webp"
+							srcset="assets/img/web_images/grywald_05/grywald_05_400_400.webp 400w,
+									assets/img/web_images/grywald_05/grywald_05_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Forest entrance at night </div>
+					</div>
+		
+					<a class="prev" onclick="plusSlides('slide1', -1)">❮</a>
+					<a class="next" onclick="plusSlides('slide1', 1)">❯</a>
+				</div>
+			</div>
+		
+			<!-- second slider -->
+			<div class="container">
+				<div class="slideshow-container slideshow-container-2">
+					<div class="mySlides slide2">
+						<div class="numbertext">1 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/women/women_front_1200_800.webp 1200w,
+								assets/img/web_images/women/women_front_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/women/women_front_400_400.webp"
+							srcset="assets/img/web_images/women/women_front_400_400.webp 400w,
+									assets/img/web_images/women/women_front_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Women Front View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">2 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/women/women_side_1200_800.webp 1200w,
+								assets/img/web_images/women/women_side_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/women/women_side_400_400.webp"
+							srcset="assets/img/web_images/women/women_side_400_400.webp 400w,
+									assets/img/web_images/women/women_side_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Women Side View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">3 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/women/women_back_1200_800.webp 1200w,
+								assets/img/web_images/women/women_back_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/women/women_back_400_400.webp"
+							srcset="assets/img/web_images/women/women_back_400_400.webp 400w,
+									assets/img/web_images/women/women_back_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Women Back View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">4 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/forest_spirit/forest_spirit_front_1200_800.webp 1200w,
+								assets/img/web_images/forest_spirit/forest_spirit_front_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/forest_spirit/forest_spirit_front_400_400.webp"
+							srcset="assets/img/web_images/forest_spirit/forest_spirit_front_400_400.webp 400w,
+									assets/img/web_images/forest_spirit/forest_spirit_front_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Forest Spirit Front View </div>
+					</div>
+		
+					<div class="mySlides slide2">
+						<div class="numbertext">5 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/forest_spirit/forest_spirit_side_1200_800.webp 1200w,
+								assets/img/web_images/forest_spirit/forest_spirit_side_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/forest_spirit/forest_spirit_side_400_400.webp"
+							srcset="assets/img/web_images/forest_spirit/forest_spirit_side_400_400.webp 400w,
+									assets/img/web_images/forest_spirit/forest_spirit_side_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Forest Spirit Side View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">6 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/forest_spirit/forest_spirit_back_1200_800.webp 1200w,
+								assets/img/web_images/forest_spirit/forest_spirit_back_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/forest_spirit/forest_spirit_back_400_400.webp"
+							srcset="assets/img/web_images/forest_spirit/forest_spirit_back_400_400.webp 400w,
+									assets/img/web_images/forest_spirit/forest_spirit_back_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Forest Spirit Back View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">7 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/wolf/wolf_front_1200_800.webp 1200w,
+								assets/img/web_images/wolf/wolf_front_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/wolf/wolf_front_400_400.webp"
+							srcset="assets/img/web_images/wolf/wolf_front_400_400.webp 400w,
+									assets/img/web_images/wolf/wolf_front_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Wolf Front View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">8 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/wolf/wolf_side_1200_800.webp 1200w,
+								assets/img/web_images/wolf/wolf_side_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/wolf/wolf_side_400_400.webp"
+							srcset="assets/img/web_images/wolf/wolf_side_400_400.webp 400w,
+									assets/img/web_images/wolf/wolf_side_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Wolf Side View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">9 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/wolf/wolf_back_1200_800.webp 1200w,
+								assets/img/web_images/wolf/wolf_back_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/wolf/wolf_back_400_400.webp"
+							srcset="assets/img/web_images/wolf/wolf_back_400_400.webp 400w,
+									assets/img/web_images/wolf/wolf_back_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Wolf Back View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">10 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/wolf/wolf_bottom_1200_800.webp 1200w,
+								assets/img/web_images/wolf/wolf_bottom_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/wolf/wolf_bottom_400_400.webp"
+							srcset="assets/img/web_images/wolf/wolf_bottom_400_400.webp 400w,
+									assets/img/web_images/wolf/wolf_bottom_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Wolf Bottom View </div>
+					</div>
+
+					
+					<div class="mySlides slide2">
+						<div class="numbertext">11 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/caspar/caspar_front_1200_800.webp 1200w,
+								assets/img/web_images/caspar/caspar_front_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/caspar/caspar_front_400_400.webp"
+							srcset="assets/img/web_images/caspar/caspar_front_400_400.webp 400w,
+								assets/img/web_images/caspar/caspar_front_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Caspar Front View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">12 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/caspar/caspar_side_1200_800.webp 1200w,
+								assets/img/web_images/caspar/caspar_side_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/caspar/caspar_side_400_400.webp"
+							srcset="assets/img/web_images/caspar/caspar_side_400_400.webp 400w,
+									assets/img/web_images/caspar/caspar_side_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Caspar Side View </div>
+					</div>
+
+					<div class="mySlides slide2">
+						<div class="numbertext">13 / 13</div>
+						<picture>
+						<source width="1200" height="800"
+						srcset="assets/img/web_images/caspar/caspar_back_1200_800.webp 1200w,
+								assets/img/web_images/caspar/caspar_back_2400_1600.webp 2400w"
+						sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+						media="(width>=768px)"/>
+						<img width="400" height="400"
+							src="assets/img/web_images/caspar/caspar_back_400_400.webp"
+							srcset="assets/img/web_images/caspar/caspar_back_400_400.webp 400w,
+									assets/img/web_images/caspar/caspar_back_800_800.webp 800w"
+							sizes="(min-width: 1360px) 1166px, calc(85.96vw + 14px)"
+							alt="grywald">
+						</picture>
+						<div class="text"> Caspar Back View </div>
+					</div>
+		
+					<a class="prev" onclick="plusSlides('slide2', -1)">❮</a>
+					<a class="next" onclick="plusSlides('slide2', 1)">❯</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- animation -->
+		<section id="animation" class="block-padding inline-padding">
+			<h2>Animation</h2>
+			<video id="responsive-video" controls width="1280" height="720">
+			  <source id="video-source" src="assets/video/animatic_desktop.mp4" type="video/mp4">
+			</video>
+		  </section>
+		
+		<!-- contact -->
+		<section id="contact-info" class="contact-container block-padding inline-padding">
+			<h2>Contact</h2>
+		<div class="vectoranimation-grid">
+			<!-- animation -->
+			<div class="vectoranimation_village"></div>
+			<div class="contact-grid">
+				<div class="contact-item">
+					<div class="icon-circle">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<p><strong>Address:</strong></p>
+					<p>Badstraße 24<br>77652 Offenburg</p>
+				</div>
+				<div class="contact-item">
+					<div class="icon-circle">
+						<i class="fas fa-phone-alt"></i>
+					</div>
+					<p><strong>Number:</strong></p>
+					<p>+49 781 2050</p>
+				</div>
+				<div class="contact-item">
+					<div class="icon-circle">
+						<i class="fas fa-paper-plane"></i>
+					</div>
+					<p><strong>E-Mail:</strong></p>
+					<p><a class="mail-link" href="mailto:hromer@stud.hs-offenburg.de">hromer@stud.hs-offenburg.de</a></p>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+	</main>
+	<footer class="inline-padding"></footer>
+</body>
+
+</html>
